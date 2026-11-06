@@ -7,6 +7,10 @@ cc_library_shared {
         integer_overflow: true,
     },
 
+    include_dirs: [
+        "vendor/qcom/opensource/commonsys-intf/display/gralloc",
+        "hardware/qcom-caf/sm6225/display/libqdmetadata",
+    ],
     header_libs: [
         "display_headers",
         "qti_kernel_headers",

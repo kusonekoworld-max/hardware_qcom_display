@@ -26,6 +26,12 @@ qtidisplay_cc_defaults {
         "libcutils",
         "libutils",
     ],
+    include_dirs: [
+        "vendor/qcom/opensource/commonsys-intf/display/gralloc",
+        "vendor/qcom/opensource/commonsys-intf/display/libqdmetadata",
+        "vendor/qcom/opensource/commonsys-intf/display/include",
+        "vendor/qcom/opensource/commonsys-intf/display/services",
+    ],
     header_libs: ["display_headers"],
     soong_config_variables: {
         drmpp: {
